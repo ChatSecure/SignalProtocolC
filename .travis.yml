@@ -1,0 +1,7 @@
+language: objective-c
+osx_image: xcode7.3
+
+before_script:
+  - pod install --project-directory=xcode/
+script:
+  - xctool -workspace xcode/libsignal-protocol-c.xcworkspace -scheme signal-protocol-tests -sdk macosx -arch x86_64 test
