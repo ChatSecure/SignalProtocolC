@@ -58,7 +58,7 @@ Pod::Spec.new do |s|
   #
 
   s.source       = { :git => "https://github.com/WhisperSystems/libsignal-protocol-c.git", 
-  					 :commit => 'c57acfa23337284577fa019818a46ad708ca588e'}
+  					 :commit => '16bfd04efa5a946a90c49bfa595f7b90249baf76'}
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
