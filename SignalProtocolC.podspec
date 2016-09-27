@@ -1,74 +1,28 @@
-#
-#  Be sure to run `pod spec lint olm.podspec' to ensure this is a
-#  valid spec and to remove all comments including this before submitting the spec.
-#
-#  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
-#  To see working Podspecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
-#
-
 Pod::Spec.new do |s|
-
-  # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  These will help people to find your library, and whilst it
-  #  can feel like a chore to fill in it's definitely to your advantage. The
-  #  summary should be tweet-length, and the description more in depth.
-  #
-
   s.name         = "SignalProtocolC"
   s.version      = "0.1.0"
-  s.summary      = "Unofficial podspec for libsignal-protocol-c"
+  s.summary      = "Signal Protocol C Library"
 
-  # This description is used to generate tags and improve search results.
-  #   * Think: What does it do? Why did you write it? What is the focus?
-  #   * Try to keep it short, snappy and to the point.
-  #   * Write the description between the DESC delimiters below.
-  #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-                  Unofficial podspec for libsignal-protocol-c
+                  This is a ratcheting forward secrecy protocol that works in synchronous and asynchronous messaging environments.
                    DESC
 
-  s.homepage     = "https://github.com/ChatSecure/SignalProtocolC.podspec"
-  # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
+  s.homepage     = "https://github.com/WhisperSystems/libsignal-protocol-c"
 
-  s.license      = { :type => "GPLv3", :file => "LICENSE" }
+	s.license = { :type => 'GPLv3', :text => <<-LICENSE
+                Copyright 2015-2016 Open Whisper Systems
 
+								Licensed under the GPLv3: http://www.gnu.org/licenses/gpl-3.0.html
+
+								Additional Permissions For Submission to Apple App Store: Provided that you are otherwise in compliance with the GPLv3 for each covered work you convey (including without limitation making the Corresponding Source available in compliance with Section 6 of the GPLv3), Open Whisper Systems also grants you the additional permission to convey through the Apple App Store non-source executable versions of the Program as incorporated into each applicable covered work as Executable Versions only under the Mozilla Public License version 2.0 (https://www.mozilla.org/en-US/MPL/2.0/).
+
+                LICENSE
+               }
   s.author             = { "Open Whisper Systems" => "support@whispersystems.org" }
   s.social_media_url   = "https://twitter.com/whispersystems/"
 
-  # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  If this Pod runs only on iOS or OS X, then specify the platform and
-  #  the deployment target. You can optionally include the target after the platform.
-  #
-
-  # s.platform     = :ios
-  # s.platform     = :ios, "5.0"
-
-  #  When using multiple platforms
-  # s.ios.deployment_target = "5.0"
-  # s.osx.deployment_target = "10.7"
-  # s.watchos.deployment_target = "2.0"
-  # s.tvos.deployment_target = "9.0"
-
-
-  # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  Specify the location from where the source should be retrieved.
-  #  Supports git, hg, bzr, svn and HTTP.
-  #
-
   s.source       = { :git => "https://github.com/WhisperSystems/libsignal-protocol-c.git", 
-  					 :commit => '16bfd04efa5a946a90c49bfa595f7b90249baf76'}
-
-
-  # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  CocoaPods is smart about how it includes source code. For source files
-  #  giving a folder will include any swift, h, m, mm, c & cpp files.
-  #  For header files it will include any header in the folder.
-  #  Not including the public_header_files will make all headers public.
-  #
+  					 				 :commit => 'b0f0e72159849bd1505d2af510bdd51d8871ce73'}
 
   s.source_files  = ["src/**/*.{h,c}"]
   s.exclude_files = 'src/curve25519/ed25519/main'
