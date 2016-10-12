@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   s.social_media_url   = "https://twitter.com/whispersystems/"
 
   s.source       = { :git => "https://github.com/WhisperSystems/libsignal-protocol-c.git", 
-  					 				 :commit => 'b0f0e72159849bd1505d2af510bdd51d8871ce73'}
+  					 				 :commit => 'a1df1a642281c804a95d144b8aa934c0de0ebda1'}
 
   s.source_files  = ["src/**/*.{h,c}"]
   s.exclude_files = 'src/curve25519/ed25519/main'
