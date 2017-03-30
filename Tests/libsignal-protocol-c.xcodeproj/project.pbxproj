@@ -665,6 +665,7 @@
 				D92D742C1E8D96FC00B478E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D92D74441E8D981100B478E8 /* Build configuration list for PBXNativeTarget "Tests-Framework-iOS" */ = {
 			isa = XCConfigurationList;
@@ -673,6 +674,7 @@
 				D92D74461E8D981100B478E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D9CC4AB91D1EF77600C327E5 /* Build configuration list for PBXProject "libsignal-protocol-c" */ = {
 			isa = XCConfigurationList;
