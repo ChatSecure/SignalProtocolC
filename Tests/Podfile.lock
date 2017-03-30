@@ -1,5 +1,5 @@
 PODS:
-  - SignalProtocolC (0.1.0)
+  - SignalProtocolC (2.3.1)
 
 DEPENDENCIES:
   - SignalProtocolC (from `../SignalProtocolC.podspec`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :podspec: "../SignalProtocolC.podspec"
 
 SPEC CHECKSUMS:
-  SignalProtocolC: 693289d20b8991b1d2588740cf48010d3d1ef4f4
+  SignalProtocolC: 510c0b566579cfc70fd2166a60290e96f2367137
 
-PODFILE CHECKSUM: fd8630405254ff7f2574879f79b291ee80dd5fa2
+PODFILE CHECKSUM: 371150e42b2dd47483d342f5353e1de447285640
 
-COCOAPODS: 1.1.0.rc.2
+COCOAPODS: 1.2.0

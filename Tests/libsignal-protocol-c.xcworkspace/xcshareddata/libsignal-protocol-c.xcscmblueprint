@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "46009F899FD1E549A6EA909CCE643A67FC5D3AED",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "46009F899FD1E549A6EA909CCE643A67FC5D3AED" : 9223372036854775807,
+    "1F0E69EE6C74FB8A0A162333FB8AE87DA223658A" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "00779487-18DC-418F-90B3-52264481C898",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "46009F899FD1E549A6EA909CCE643A67FC5D3AED" : "SignalProtocolC\/",
+    "1F0E69EE6C74FB8A0A162333FB8AE87DA223658A" : "SignalProtocolC\/libsignal-protocol-c\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "libsignal-protocol-c",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Tests\/libsignal-protocol-c.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/WhisperSystems\/libsignal-protocol-c.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1F0E69EE6C74FB8A0A162333FB8AE87DA223658A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:ChatSecure\/SignalProtocolC.podspec.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "46009F899FD1E549A6EA909CCE643A67FC5D3AED"
+    }
+  ]
+}

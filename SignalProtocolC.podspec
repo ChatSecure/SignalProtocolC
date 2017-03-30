@@ -1,13 +1,17 @@
 Pod::Spec.new do |s|
   s.name         = "SignalProtocolC"
-  s.version      = "0.1.0"
+  s.version      = "2.3.1"
   s.summary      = "Signal Protocol C Library"
+
+  s.osx.deployment_target = '10.9'
+  s.ios.deployment_target = '8.0'
 
   s.description  = <<-DESC
                   This is a ratcheting forward secrecy protocol that works in synchronous and asynchronous messaging environments.
+                  https://github.com/WhisperSystems/libsignal-protocol-c
                    DESC
 
-  s.homepage     = "https://github.com/WhisperSystems/libsignal-protocol-c"
+  s.homepage     = "https://github.com/ChatSecure/SignalProtocolC"
 
 	s.license = { :type => 'GPLv3', :text => <<-LICENSE
                 Copyright 2015-2016 Open Whisper Systems
@@ -22,7 +26,7 @@ Pod::Spec.new do |s|
   s.social_media_url   = "https://twitter.com/whispersystems/"
 
   s.source       = { :git => "https://github.com/WhisperSystems/libsignal-protocol-c.git", 
-  					 				 :commit => 'a1df1a642281c804a95d144b8aa934c0de0ebda1'}
+  					 				 :tag => 'v' + s.version.to_s}
 
   s.source_files  = ["src/**/*.{h,c}"]
   s.exclude_files = 'src/curve25519/ed25519/main'
