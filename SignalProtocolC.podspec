@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "SignalProtocolC"
-  s.version      = "2.3.1"
+  s.version      = "2.3.2"
   s.summary      = "Signal Protocol C Library"
 
   s.osx.deployment_target = '10.9'
