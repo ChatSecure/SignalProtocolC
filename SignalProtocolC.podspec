@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
   s.name         = "SignalProtocolC"
-  s.version      = "2.3.2"
+  s.version      = "2.3.3"
   s.summary      = "Signal Protocol C Library"
 
   s.osx.deployment_target = '10.9'
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
   s.tvos.deployment_target = '9.0'
   s.watchos.deployment_target = '2.0'
 
@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   s.author             = { "Open Whisper Systems" => "support@whispersystems.org" }
   s.social_media_url   = "https://twitter.com/whispersystems/"
 
-  s.source       = { :git => "https://github.com/WhisperSystems/libsignal-protocol-c.git", 
+  s.source       = { :git => "https://github.com/signalapp/libsignal-protocol-c.git",
   					 				 :tag => 'v' + s.version.to_s}
 
   s.source_files  = ["src/**/*.{h,c}"]
