@@ -27,12 +27,14 @@ Pod::Spec.new do |s|
   s.author             = { "Open Whisper Systems" => "support@whispersystems.org" }
   s.social_media_url   = "https://twitter.com/whispersystems/"
 
-  s.source       = { :git => "https://github.com/signalapp/libsignal-protocol-c.git",
-  					 				 :tag => 'v' + s.version.to_s}
+  s.source       = {  :git => "https://github.com/ChatSecure/SignalProtocolC.git",
+                      :tag => s.version.to_s, 
+                      :submodules => true
+                   }
 
-  s.source_files  = ["src/**/*.{h,c}"]
-  s.exclude_files = 'src/curve25519/ed25519/main'
-  s.public_header_files = ["src/signal_protocol.h", "src/signal_protocol_types.h", "src/curve.h", "src/hkdf.h", "src/ratchet.h", "src/protocol.h", "src/session_state.h", "src/session_record.h", "src/session_pre_key.h", "src/session_builder.h", "src/session_cipher.h", "src/key_helper.h", "src/sender_key.h", "src/sender_key_state.h", "src/sender_key_record.h", "src/group_session_builder.h", "src/group_cipher.h", "src/fingerprint.h"]
+  s.source_files  = ["libsignal-protocol-c/src/**/*.{h,c}"]
+  s.exclude_files = 'libsignal-protocol-c/src/curve25519/ed25519/main'
+  s.public_header_files = ["libsignal-protocol-c/src/signal_protocol.h", "libsignal-protocol-c/src/signal_protocol_types.h", "libsignal-protocol-c/src/curve.h", "libsignal-protocol-c/src/hkdf.h", "libsignal-protocol-c/src/ratchet.h", "libsignal-protocol-c/src/protocol.h", "libsignal-protocol-c/src/session_state.h", "libsignal-protocol-c/src/session_record.h", "libsignal-protocol-c/src/session_pre_key.h", "libsignal-protocol-c/src/session_builder.h", "libsignal-protocol-c/src/session_cipher.h", "libsignal-protocol-c/src/key_helper.h", "libsignal-protocol-c/src/sender_key.h", "libsignal-protocol-c/src/sender_key_state.h", "libsignal-protocol-c/src/sender_key_record.h", "libsignal-protocol-c/src/group_session_builder.h", "libsignal-protocol-c/src/group_cipher.h", "libsignal-protocol-c/src/fingerprint.h"]
 
-  s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(PODS_ROOT)/SignalProtocolC/src $(PODS_ROOT)/SignalProtocolC/src/curve25519 $(PODS_ROOT)/SignalProtocolC/src/curve25519/ed25519 $(PODS_ROOT)/SignalProtocolC/src/protobuf-c' }
+  s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(PODS_ROOT)/SignalProtocolC/libsignal-protocol-c/src $(PODS_ROOT)/SignalProtocolC/libsignal-protocol-c/src/curve25519 $(PODS_ROOT)/SignalProtocolC/libsignal-protocol-c/src/curve25519/ed25519 $(PODS_ROOT)/SignalProtocolC/libsignal-protocol-c/src/protobuf-c' }
 end
